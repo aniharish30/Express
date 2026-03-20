@@ -7,8 +7,8 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model Restaurent {
-  restaurant_id String @unique
+model Restaurant {
+  restaurant_id String @id @default(uuid())
   name          String
   location      String
   image_url     String
